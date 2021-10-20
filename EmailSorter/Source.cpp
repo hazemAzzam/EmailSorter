@@ -77,11 +77,11 @@ int main()
 			if (text.find(domains[i].name) != string::npos) {
 				domains[i].addEmail(text);
 				domains[i].count++;
-				if (int(domains[i].count) % 1 == 0) {
+				/*if (int(domains[i].count) % 1 == 0) {
 					system("cls");
 					cout << "domain name: " << domains[i].name;
 					cout << "   counter: " << domains[i].count << endl;
-				}
+				}*/
 			}
 		}
 		input.clear();
