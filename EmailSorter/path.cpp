@@ -9,8 +9,8 @@ private:
 	void setup() {
 		string temp = "";
 		for (int i =0; i < text.size(); i++) {
-			/*if (text[i] == '"')
-				continue;*/
+			if (text[i] == '"')
+				continue;
 			if (text[i] == '\\')
 				temp += '\\';
 			temp += text[i];
@@ -21,7 +21,7 @@ public:
 	string text;
 	string getPathFromUser() {
 		cout << "Enter path: ";
-		getline(cin, text);
+		getline(cin, text, '\n');
 		setup();
 		return text;
 	}

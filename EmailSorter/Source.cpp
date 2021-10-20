@@ -59,6 +59,7 @@ int main()
 	inputPath.getPathFromUser();
 
 	// create ifstream for input file 
+	cout << inputPath.text << endl;
 	ifstream input(inputPath.text);
 
 	// some output
