@@ -16,8 +16,6 @@ public:
 	void getNamefromChare() {
 		name = "";
 		for (int i = 0; i < chare.size(); i++) {
-			if (!isalpha(chare[i]))
-				continue;
 			name += chare[i];
 		}
 	}
